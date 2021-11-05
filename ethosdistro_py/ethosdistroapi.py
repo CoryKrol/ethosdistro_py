@@ -11,13 +11,11 @@ from . import PANEL_ID
 from .exceptions import APIError, JsonFormatError, NotFoundError
 from .urls import Urls
 
-DATA = "data"
-
 
 class EthosAPI(object):
     def __init__(self, session: ClientSession, panel_id: str = PANEL_ID):
         self.__client = session
-        self.__panel_id = {"panel_id": panel_id}
+        self.__panel_id = panel_id
         self.urls = Urls()
 
     def panel_id_set(self):
@@ -73,15 +71,11 @@ class EthosAPI(object):
         except JSONDecodeError as e:
             raise JsonFormatError(e)
 
-    async def async_get_block_count(self, coin_name: str):
-        """ "Get current block height in blockchain
+    async def async_get_panel(self):
+        """Get data show in dashboard panel
 
         Returns
         -------
-        int
-            block count
+
         """
-        response = await self.__get_data(
-            self.urls.get_block_count_url(coin_name=coin_name)
-        )
-        return int((response[self.urls.action_get_block_count][DATA]))
+        return await self.__get_data(self.urls.get_panel_url(panel_id=self.__panel_id))
