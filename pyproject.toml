@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ethosdistro_py"
-version = "0.1.1"
+version = "0.1.2"
 description = "An async Python wrapper for the ethosOS API"
 authors = ["CoryKrol <16892390+CoryKrol@users.noreply.github.com>"]
 license = "Apache 2"
