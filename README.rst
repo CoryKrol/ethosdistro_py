@@ -1,5 +1,5 @@
 
-miningpoolhub_py
+ethosdistro_py
 ----------------
 .. image:: https://github.com/CoryKrol/ethosdistro_py/workflows/CI/badge.svg?branch=master
      :target: https://github.com/CoryKrol/ethosdistro_py/actions?workflow=CI

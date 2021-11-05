@@ -1,9 +1,9 @@
-.. miningpoolhub_py documentation master file, created by
+.. ethosdistro_py documentation master file, created by
    sphinx-quickstart on Mon Oct 18 21:35:42 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MiningPoolHub_py's documentation!
+Welcome to EthOSdistro_py's documentation!
 =============================================
 .. toctree::
    :maxdepth: 4
@@ -17,7 +17,7 @@ Welcome to MiningPoolHub_py's documentation!
    :nosignatures:
    :toctree: generated
 
-   miningpoolhub_py.pool
+   ethosdistro_py.pool
 
 Indices and tables
 ==================
